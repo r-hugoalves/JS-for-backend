@@ -74,6 +74,16 @@ const num3 = 9;
 console.log(num1 === num2); //false
 console.log(num3 === num2); //true
 
+//Seguindo a mesma lógica do Boolean, também temos o Truthy e o Falsy
+
+// 0 => false
+// " " => false
+// 1 => true
+
+console.log( 0 == false) // true
+console.log( "" == false) // true
+console.log( 1 == true) // true
+
                 //TIPO NULL E UNDEFINED
 
 let input = null;
@@ -81,4 +91,31 @@ let input2;
                 
 console.log(input); // null
 console.log(input2); // undefined
-  
+
+
+                //CONVERSÕES 
+
+//Conversão implícita//
+
+const numero = 678; 
+const numeroString = "678"; 
+
+console.log(numero === numeroString) // false
+//nesse caso ele compara o valor e o tipo
+
+console.log(numero == numeroString) // true
+//nesse caso ele compara o tipo
+
+//Conversão explícita//
+
+console.log(numero + Number(numeroString))
+//nesse caso, eu converti o valor da variável para um tipo number, possibilitando a operação de soma
+        //isso funcionou para esse caso, pois todo o valor dentro da string era um número, se tivesse algo mais, 
+        //daria um erro de NaN. Ex.: "teste678"
+
+console.log(String(numero) + numeroString)
+//nesse caso, eu converti o valor da varivável para um tipo String, possibilitando a concatenação
+
+
+
+
