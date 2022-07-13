@@ -104,7 +104,7 @@ console.log(numero === numeroString) // false
 //nesse caso ele compara o valor e o tipo
 
 console.log(numero == numeroString) // true
-//nesse caso ele compara o tipo
+//nesse caso ele compara o valor
 
 //Conversão explícita//
 
